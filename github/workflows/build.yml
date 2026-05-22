@@ -1,0 +1,74 @@
+name: Build APK
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      
+      - name: Install npm dependencies
+        run: npm install
+        
+      - name: Build web assets
+        run: npm run build
+        
+      - name: Create gradle wrapper
+        run: |
+          cat > settings.gradle.kts << 'SETTINGSEOF'
+          pluginManagement {
+              repositories {
+                  google()
+                  mavenCentral()
+                  gradlePluginPortal()
+              }
+          }
+          dependencyResolutionManagement {
+              repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+              repositories {
+                  google()
+                  mavenCentral()
+              }
+          }
+          rootProject.name = "VoiceCommander"
+          include(":app")
+          SETTINGSEOF
+          
+          cat > build.gradle.kts << 'BUILDEOF'
+          plugins {
+              id("com.android.application") version "8.2.0" apply false
+              id("org.jetbrains.kotlin.android") version "1.9.20" apply false
+          }
+          BUILDEOF
+          
+          cat > gradle.properties << 'PROPSEOF'
+          android.useAndroidX=true
+          kotlin.code.style=official
+          android.nonTransitiveRClass=true
+          PROPSEOF
+          
+          gradle wrapper --gradle-version 8.7
+          
+      - name: Build APK
+        run: ./gradlew assembleDebug
+        
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: VoiceCommander
+          path: app/build/outputs/apk/debug/app-debug.apk
