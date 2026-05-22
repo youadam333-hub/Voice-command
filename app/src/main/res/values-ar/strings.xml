@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الأوامر الصوتية</string>
+    
+    <string name="service_status">حالة الخدمة</string>
+    <string name="service_running">تعمل</string>
+    <string name="service_stopped">متوقفة</string>
+    <string name="start_service">بدء الخدمة</string>
+    <string name="stop_service">إيقاف الخدمة</string>
+    
+    <string name="permissions_title">الصلاحيات</string>
+    <string name="perm_mic">الميكروفون (للصوت)</string>
+    <string name="perm_cam">الكاميرا (للكشاف)</string>
+    <string name="perm_overlay">الظهور (الفقاعة)</string>
+    <string name="perm_a11y">إمكانية الوصول</string>
+    <string name="perm_admin">مسؤول الجهاز</string>
+    
+    <string name="btn_grant">منح</string>
+    <string name="btn_enable">تفعيل</string>
+    
+    <string name="accessibility_instruction">ابحث عن "Voice Commander" وقم بتفعيله.</string>
+    <string name="admin_description">ضروري لقفل الشاشة بالأمر الصوتي.</string>
+    <string name="overlay_required">صلاحية الظهور مطلوبة!</string>
+    
+    <string name="voice_settings">إعدادات الصوت</string>
+    <string name="language">اللغة</string>
+    
+    <string name="help_title">أمثلة على الأوامر</string>
+    <string name="help_content">
+        • فتح تطبيق: "افتح واتساب" / "Open WhatsApp"\n
+        • الكشاف: "شغّل الكشاف" / "Turn on flashlight"\n
+        • قفل الشاشة: "قفل الشاشة" / "Lock screen"\n
+        • إطفاء الشاشة: "اطفي الشاشة" / "Turn off screen"\n
+        • إغلاق التطبيق: "أغلق التطبيق" / "Close app"\n
+        • تنشيط الشاشة: "صحّي الشاشة" / "Wake up"\n
+        • قائمة الطاقة: "أغلق الهاتف" / "Power off"\n
+        • مساعدة: "مساعدة" / "Help"
+    </string>
+
+    <string name="status_listening">في انتظار الأوامر...</string>
+
+    <string name="cmd_opening">جاري فتح</string>
+    <string name="cmd_not_opened">لا يمكن فتح التطبيق</string>
+    <string name="cmd_app_not_found">لم يتم العثور على:</string>
+    <string name="cmd_wifi">فتح إعدادات الواي فاي</string>
+    <string name="cmd_bluetooth">فتح إعدادات البلوتوث</string>
+    <string name="cmd_flashlight_on">تم تشغيل الكشاف</string>
+    <string name="cmd_flashlight_off">تم إيقاف الكشاف</string>
+    <string name="cmd_flashlight_err">خطأ في الكشاف</string>
+    <string name="cmd_locking">جاري قفل الشاشة</string>
+    <string name="cmd_admin_req">مطلوب صلاحية مسؤول الجهاز لقفل الشاشة</string>
+    <string name="cmd_screen_off">جاري إيقاف الشاشة</string>
+    <string name="cmd_wake_up">تنشيط الشاشة</string>
+    <string name="cmd_closing_app">إغلاق التطبيق</string>
+    <string name="cmd_power_menu">إظهار قائمة الطاقة</string>
+    <string name="cmd_help_spoken">للأوامر راجع بطاقة المساعدة في التطبيق.</string>
+    <string name="cmd_unknown">أمر غير معروف:</string>
+    <string name="status_granted">ممنوحة</string>
+    <string name="status_denied">مرفوضة</string>
+    <string name="status_enabled">مفعلة</string>
+    <string name="status_disabled">معطلة</string>
+</resources>

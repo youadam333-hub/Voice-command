@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Voice Commander</string>
+    
+    <!-- Control Panel -->
+    <string name="service_status">Service Status</string>
+    <string name="service_running">Running</string>
+    <string name="service_stopped">Stopped</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    
+    <!-- Permissions -->
+    <string name="permissions_title">Permissions</string>
+    <string name="perm_mic">Microphone (Audio)</string>
+    <string name="perm_cam">Camera (Flashlight)</string>
+    <string name="perm_overlay">Overlay (Bubble)</string>
+    <string name="perm_a11y">Accessibility</string>
+    <string name="perm_admin">Device Admin</string>
+    
+    <string name="btn_grant">Grant</string>
+    <string name="btn_enable">Enable</string>
+    
+    <string name="accessibility_instruction">Find "Voice Commander" and turn it on.</string>
+    <string name="admin_description">Required to lock screen via voice command.</string>
+    <string name="overlay_required">Overlay permission is required!</string>
+    
+    <!-- Voice Settings -->
+    <string name="voice_settings">Voice Settings</string>
+    <string name="language">Language</string>
+    
+    <!-- Help -->
+    <string name="help_title">Command Examples</string>
+    <string name="help_content">
+        • Open App: "Open WhatsApp" / "افتح واتساب"\n
+        • Flashlight: "Turn on flashlight" / "شغّل الكشاف"\n
+        • Lock Screen: "Lock screen" / "قفل الشاشة"\n
+        • Screen Off: "Turn off screen" / "اطفي الشاشة"\n
+        • Close App: "Close app" / "أغلق التطبيق"\n
+        • Wake Up: "Wake up" / "صحّي الشاشة"\n
+        • Power Menu: "Power off" / "أغلق الهاتف"\n
+        • Help: "Help" / "مساعدة"
+    </string>
+
+    <string name="status_listening">Listening for commands...</string>
+
+    <!-- Command Responses -->
+    <string name="cmd_opening">Opening</string>
+    <string name="cmd_not_opened">App cannot be opened</string>
+    <string name="cmd_app_not_found">App not found:</string>
+    <string name="cmd_wifi">Opening Wi-Fi settings</string>
+    <string name="cmd_bluetooth">Opening Bluetooth settings</string>
+    <string name="cmd_flashlight_on">Flashlight is on</string>
+    <string name="cmd_flashlight_off">Flashlight is off</string>
+    <string name="cmd_flashlight_err">Flashlight error</string>
+    <string name="cmd_locking">Locking screen</string>
+    <string name="cmd_admin_req">Admin required to lock screen</string>
+    <string name="cmd_screen_off">Turning off screen</string>
+    <string name="cmd_wake_up">Waking up</string>
+    <string name="cmd_closing_app">Closing app</string>
+    <string name="cmd_power_menu">Showing power menu</string>
+    <string name="cmd_help_spoken">Commands check app help card.</string>
+    <string name="cmd_unknown">Unknown command:</string>
+    <string name="status_granted">Granted</string>
+    <string name="status_denied">Denied</string>
+    <string name="status_enabled">Enabled</string>
+    <string name="status_disabled">Disabled</string>
+</resources>
